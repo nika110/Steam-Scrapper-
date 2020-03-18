@@ -1,3 +1,9 @@
-# Wamikitxe bozo!
+#Readme
 
-## bozo mclaw aoidaoifjioeji
+## როცა გასაშვებია სკრაპერი დარწმუნდი რომ ხარ იმავე დირეკტორიაში სადაც მდებარეობს `scrapy.cfg`
+
+### მაგალითი:  ```scrapy crawl image -o data.json```
+
+
+#### TODO : მონგოში შენახვა დატის `pipelines.py` ის მეშვეობით @კუკუშა
+#### TODO : ბექი გაპარსული დატის ფლასკზე ეგეც ამ ყლეს ^ 
