@@ -9,5 +9,6 @@ import scrapy
 
 
 class RaviItem(scrapy.Item):
+    _id = scrapy.Field()
     image = scrapy.Field()
-    steam_id = scrapy.Field()
+    index = scrapy.Field()

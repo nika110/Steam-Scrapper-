@@ -10,7 +10,7 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'steamparse'
-
+REDIRECT_ENABLED = False
 SPIDER_MODULES = ['steamparse.spiders']
 NEWSPIDER_MODULE = 'steamparse.spiders'
 
