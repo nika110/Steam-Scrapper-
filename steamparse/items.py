@@ -10,5 +10,5 @@ import scrapy
 
 class RaviItem(scrapy.Item):
     _id = scrapy.Field()
-    image = scrapy.Field()
-    index = scrapy.Field()
+    image_hash = scrapy.Field()
+    steam_profile = scrapy.Field()
