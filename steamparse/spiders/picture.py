@@ -21,7 +21,7 @@ HEADERS = {"user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KH
 class PictureSpider(scrapy.Spider):
     name = 'picture'
     allowed_domains = ['steamcommunity.com', 'steamcdn-a.akamaihd.net']
-    start_urls = [load_content("data2.json")]
+    start_urls = load_content("data2.json")
 
     def parse(self, response):
         image = response.xpath(IMG_XP).extract_first()

@@ -18,12 +18,16 @@ import numpy as np
 
 
 def load_content(name):
-    f = open(name, "r")
-    read = f.readlines()
-    for x in read:
-        l = x[11:64]
-        if l.startswith("http"):
-            print(l.strip('"'))
+    data = []
+    with open(name) as f:
+        content = f.readlines()
+        for link in content:
+            if link.startswith("http"):
+                link.replace('http','https')
+                data.append(link[:53])
+    return data
+
+
 
 
 
