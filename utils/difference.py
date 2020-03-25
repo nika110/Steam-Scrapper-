@@ -14,6 +14,14 @@ print(response.content[:500]==response_2.content[:500])
 print(hashlib.sha256(response.content[:500]).hexdigest())
 
 
+def get_similar(profile_url, collection):
+    profile_url = profile_url.split('_full.jpg')[0] + '.jpg'
+    response = requests.get(profile_url)
+    picture_hash = hashlib.sha256(response.content[:500]).hexdigest()
+
+    return  # collection.find_one({"image_hash": picture_hash})
+
+
 #def is_similar(first, second):
 #    first = np.asarray(first).flatten()
 #    second = np.asarray(second).flatten()

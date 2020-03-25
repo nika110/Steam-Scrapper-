@@ -72,7 +72,7 @@ ITEM_PIPELINES = {
 
 #configure mongoDB
 MONGODB_HOST = 'localhost'
-MONGODB_PORT = '27017'
+MONGODB_PORT = 27017
 MONGODB_DB = 'DBase'
 MONGODB_COLLECTION = 'DBcollection'
 
