@@ -1,7 +1,6 @@
 import requests
 import hashlib
 import json
-import numpy as np
 #import re NO REGEX NEEDED NOOB REGEX IS IMPLEMENTED FUNCTION NOOB
 
 
@@ -17,15 +16,14 @@ import numpy as np
 # print(hashlib.sha256(response.content[:500]).hexdigest())
 
 
-def load_content(name):
-    data = []
+def load_content(name='data.out'):
     with open(name) as f:
         content = f.readlines()
         for link in content:
+            link = eval(link)['link']
             if link.startswith("http"):
                 link.replace('http','https')
-                data.append(link[:53])
-    return data
+                yield link[:53]
 
 
 
