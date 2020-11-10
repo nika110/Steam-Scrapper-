@@ -5,7 +5,5 @@
 ### მაგალითი:  ```scrapy crawl image -o data.json```
 
 
-#### TODO : ბექი გაპარსული დატის ფლასკზე ეგეც ამ ყლეს ^ 
-
 >>> დაემატა Image Recognition
 >>> დაემატა MONGODB
